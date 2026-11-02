@@ -1,0 +1,2 @@
+# Prevent direct HTTP access to runtime countdown data.
+Require all denied

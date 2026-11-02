@@ -1,0 +1,9 @@
+# Runtime countdown data
+/nexan-storage/*
+!/nexan-storage/.htaccess
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
