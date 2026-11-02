@@ -1,0 +1,110 @@
+:root {
+    color-scheme: light;
+    --page-bg: #f8fafc;
+    --surface: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+    --theme-button-hover: #eff6ff;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg: #111827;
+    --surface: #1f2937;
+    --text-main: #f1f5f9;
+    --text-muted: #9ca3af;
+    --border: #374151;
+    --accent: #60a5fa;
+    --theme-button-hover: #26364a;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    transition: background-color .3s, color .3s;
+    background-color: var(--page-bg);
+    color: var(--text-main);
+}
+
+.theme-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    transition: background-color .25s, border-color .25s;
+}
+
+.theme-text {
+    color: var(--text-main);
+}
+
+.theme-muted {
+    color: var(--text-muted);
+}
+
+.theme-divider {
+    border-color: var(--border);
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background-color: var(--surface);
+    color: var(--text-main);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--theme-button-hover);
+    color: var(--accent);
+}
+
+.brand-link {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.brand-link span {
+    color: var(--accent);
+}
+
+.time-value {
+    font-size: clamp(25px, 5vw, 36px);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -1px;
+    color: var(--text-main);
+}
+
+.time-unit {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.contact-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .time-box {
+        padding: 14px 3px !important;
+    }
+}

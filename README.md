@@ -7,8 +7,22 @@ Maintenance/development landing page for WWW.NEXAN.ID.
 - Shared countdown timestamp; page refreshes do not reset it.
 - Light/dark theme follows the operating system by default.
 - Manual theme preference is stored in browser localStorage.
+- Custom styles are maintained in `assets/css/style.css`.
 - Bootstrap 5.3, Tailwind CSS CDN, Font Awesome 6, and Inter font.
 - Asia/Jakarta timezone.
+
+## Project structure
+```text
+.
+├── assets/
+│   └── css/
+│       └── style.css
+├── nexan-storage/
+│   └── .htaccess
+├── index.php
+├── README.md
+└── .gitignore
+```
 
 ## Requirements
 - PHP 8.0+
